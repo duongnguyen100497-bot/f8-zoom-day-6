@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 62.5%;
+    background-color: rgba(93, 129, 205, 0.2);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* start css index.html */
+.main{
+    margin: 0 auto;
+    background-color: rgb(253, 253, 233);
+    min-height: 150px;
+    max-height: 300px;
+    min-width: 150px;
+    max-width: 600px;
+    
+}
+
+.main h1{
+    color: rgb(188, 154, 31);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0.62rem;
+    text-align: center;
+}
+
+.main ul{
+    padding-left: 70px;
+}
+
+.main li a{
+    text-decoration: none;
+    font-size: 20px ;
+    font-weight: bold;
+    color: black;
+}
+
+/* cv-flex */
+.wrapper{
+    --primary-color-cv: rgb(49 75 55);
+    --second-color-cv: rgb(83 125 93);
+
+    display: flex;
+    width: 80vw;
+    margin: 3rem auto;
+    font-size: 1.6rem;
+}
+
+.sidebar{
+    flex: 2;
+    color: white;
+}
+
+.profile{
+    padding: 2rem 3rem;
+    background-color: var(--second-color-cv);
+}
+
+.avt-flex{
+    text-align: center;
+} 
+.avt{
+    border-radius: 50%;
+    width: 20rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.name{
+    text-align: center;
+}
+
+.name h1{
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.4;
+}
+.name span{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.render{
+    /* height: 20rem; */
+    background-color: var(--primary-color-cv);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 2rem;
+
+}
+
+.render-item, .render li{
+    padding: 0.5rem;
+    align-items: center;
+    line-height: 1.4;
+}
+
+i.icon-render {
+    padding-right: 0.5rem;
+    min-width: 2rem;
+}
+
+.layout-render{
+    background-color: var(--primary-color-cv);
+    display: flex;
+    align-items: center;
+}
+
+.layout-render::after{
+    content: "";
+    height: 2px;
+    background-color: var(--second-color-cv);
+    flex: 1;
+    margin-right: 2rem;
+}
+.layout-render .text-editor{
+  
+    border-radius: 48px;
+    padding: 6px 12px;
+    margin: 0 1rem 0 2rem;
+    background-color: var(--second-color-cv);
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+
+.container-cv{
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+    padding: 3rem;
+    background-color: #fff;
+}
+
+.cv-header{
+    text-align: center;
+}
+
+.cv-header>h1 {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.cv-header p{
+    margin: 5px 0 32px;
+}
+
+.section{
+    border-bottom: 2px solid black;
+    line-height: 2.4;
+    font-weight: bold;
+}
+
+.job-title{
+    text-align: justify;
+    font-weight: 700;
+    padding-top: 16px;
+}
+
+.job-title h3 {
+    display: inline-block;
+}
+.full-width{
+    display: inline-block;
+    width: 100%;
+}
+
+ul{
+    line-height: 1.4;
+    text-align: justify;
+    padding-left: 22px;
+    margin-top: 0;
+}
